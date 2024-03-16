@@ -27,7 +27,7 @@ const getPosts = async(req,res)=>{
     try{
 
          const posts = await Post.find({});
-         res.status(200).send({success:true,msg:"Get Data Successfully",data:posts});
+         res.status(200).send({success:true,msg:"Get data Successfully",data:posts});
 
     } catch(error){
         res.status(400).send({success:false,msg:error.message});
