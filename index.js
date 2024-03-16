@@ -24,6 +24,6 @@ app.use('/api',post_route);
 app.use('/api',user_route);
 
 
-app.listen(8000,function(){
+app.listen(5000,function(){
     console.log('server is running');
 })
