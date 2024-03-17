@@ -26,7 +26,7 @@ const createPost = async(req,res)=>{
 const getPosts = async(req,res)=>{
     try{
 
-         const posts = await Post.find({});
+         const posts = await Post.find();
          res.status(200).send({success:true,msg:"Get data Successfully",data:posts});
 
     } catch(error){

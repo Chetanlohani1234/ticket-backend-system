@@ -8,9 +8,9 @@ const DB = "mongodb+srv://root:MongoDb%40123!@cluster0.8ujyaqs.mongodb.net/Ticke
 mongoose.connect(DB,
    {
   useNewUrlParser: true,
-  useCreateIndex: true,
+  //useCreateIndex: true,
   useUnifiedTopology: true,
-  useFindAndModify: false
+  //useFindAndModify: false
 })
 .then(() => {
   console.log("Connection successful");
